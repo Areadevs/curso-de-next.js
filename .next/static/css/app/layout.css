@@ -617,6 +617,16 @@ a {
   color: inherit;
 }
 
+.light {
+  background-color: white;
+  color: #111;
+}
+
+.dark {
+  background-color: #111;
+  color: #bbb;
+}
+
 .container {
   max-width: 1366px;
   min-height: 100vh;
@@ -645,6 +655,34 @@ a {
 .footer_icon__zw1Tn {
     opacity: 0.6;
     cursor: pointer;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/DarkModeToggle/DarkModeToggle.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+.DarkModeToggle_container__diVrZ {
+    width: 42px;
+    height: 24px;
+    border: 1.5px solid #53c28b70;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.DarkModeToggle_icon__ZzAjt {
+    font-size: 12px;
+}
+
+.DarkModeToggle_ball__nYpQ_ {
+    width: 15px;
+    height: 15px;
+    background-color: #53c28b;
+    border-radius: 50%;
+    position: absolute;
+
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/navbar/navbar.module.css ***!
