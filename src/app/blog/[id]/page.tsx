@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
 async function getData(id) {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
-        cache: "no-cache",
+    const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+        cache: "no-store",
     })
 
     if (!res.ok) {
@@ -26,22 +26,22 @@ const BlogPost = async ({ params }) => {
                         {data.title}
                     </h1>
                     <p className={styles.desc}>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ducimus incidunt deserunt quam fuga tempora odit, eligendi quidem et. Magni asperiores odio quam, tempora sunt quibusdam dicta illo laborum ea!
+                        {data.desc}
                     </p>
                     <div className={styles.author}>
                         <Image
-                            src="https://images.pexels.com/photos/16353919/pexels-photo-16353919/free-photo-of-fontanna-di-trevi-in-rome-italy.jpeg"
+                            src={data.img}
                             alt=""
                             width={40}
                             height={40}
                             className={styles.avatar}
                         />
-                        <span className={styles.username}>John Doe</span>
+                        <span className={styles.username}>{data.username}</span>
                     </div>
                 </div>
                 <div className={styles.imageContainer}>
                     <Image
-                        src="https://images.pexels.com/photos/16353919/pexels-photo-16353919/free-photo-of-fontanna-di-trevi-in-rome-italy.jpeg"
+                        src={data.img}
                         alt=""
 
                         width={500}
@@ -52,7 +52,7 @@ const BlogPost = async ({ params }) => {
             </div>
             <div className={styles.content}>
                 <p className={styles.text}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consectetur temporibus itaque perspiciatis tenetur architecto, ipsam, tempore minima aspernatur quia nulla error corrupti possimus voluptates repellendus? Quisquam deserunt officia id.
+                    {data.content}
                 </p>
             </div>
         </div>
