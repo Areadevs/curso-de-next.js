@@ -43,7 +43,7 @@ const Category = ({ params }) => {
             ))
             }
 
-        </div >
+        </div>
     );
 };
 
