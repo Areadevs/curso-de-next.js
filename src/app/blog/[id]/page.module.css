@@ -19,6 +19,7 @@
 .desc {
     font-size: 18px;
     font-weight: 300;
+    width: 90%;
 }
 
 .author {
@@ -30,6 +31,11 @@
 .avatar {
     object-fit: cover;
     border-radius: 50%;
+    height: 40px;
+}
+
+.username {
+    font-weight: 600;
 }
 
 .imageContainer {
@@ -37,10 +43,12 @@
     display: flex;
     height: 300px;
     position: relative;
+
 }
 
 .image {
     object-fit: cover;
+    width: 100%;
 }
 
 .content {
