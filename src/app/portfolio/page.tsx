@@ -2,6 +2,10 @@ import React from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 
+export const metadata: Metadata = {
+    title: 'Lamamia Portfolio',
+    description: 'This is Portfolio Page',
+}
 
 const Portfolio = () => {
     return (

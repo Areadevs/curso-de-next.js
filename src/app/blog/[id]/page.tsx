@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
+// 1º SEARCH DATA
 async function getData(id) {
     const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
         cache: "no-store",
@@ -15,7 +16,17 @@ async function getData(id) {
     return res.json()
 }
 
+// SEO Dynamic metadata
+export async function generateMetadata({ params }) {
 
+    const post = await getData(params.id)
+    return {
+        title: post.title,
+        description: post.desc
+    }
+}
+
+// 2º INSERT DATA INTO THE COMPONENT
 const BlogPost = async ({ params }) => {
     const data = await getData(params.id)
     return (

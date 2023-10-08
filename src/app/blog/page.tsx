@@ -3,6 +3,13 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+// SEO Static metadata
+export const metadata: Metadata = {
+    title: 'Lamamia Blog',
+    description: 'This is Blog Page',
+}
+
+// 1º SEARCH DATA
 async function getData() {
 
 
@@ -18,6 +25,7 @@ async function getData() {
     return res.json();
 }
 
+// 2º INSERT DATA INTO THE COMPONENT
 const Blog = async () => {
     const data = await getData();
 

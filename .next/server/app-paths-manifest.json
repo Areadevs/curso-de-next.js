@@ -1,13 +1,9 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/blog/page": "app/blog/page.js",
   "/about/page": "app/about/page.js",
   "/contact/page": "app/contact/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
-  "/blog/[id]/page": "app/blog/[id]/page.js",
-  "/api/posts/route": "app/api/posts/route.js",
-  "/portfolio/[category]/page": "app/portfolio/[category]/page.js",
-  "/api/posts/[id]/route": "app/api/posts/[id]/route.js"
+  "/portfolio/page": "app/portfolio/page.js"
 }

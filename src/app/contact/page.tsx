@@ -3,6 +3,13 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import Button from '@/components/Button/Button'
 
+// SEO Static metadata
+export const metadata: Metadata = {
+    title: 'Lamamia Contato',
+    description: 'This is Contact Page',
+}
+
+
 const Contact = () => {
     return (
         <div className={styles.container}>

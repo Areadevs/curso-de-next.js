@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { items } from "./data.js"
 import { notFound } from "next/navigation"
 
+// 1º SEARCH DATA
 const getData = (cat) => {
     const data = items[cat]
 
@@ -15,6 +16,7 @@ const getData = (cat) => {
     return notFound()
 }
 
+// 2º INSERT DATA INTO THE COMPONENT
 const Category = ({ params }) => {
 
 
@@ -47,4 +49,6 @@ const Category = ({ params }) => {
     );
 };
 
+
 export default Category
+
