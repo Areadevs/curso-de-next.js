@@ -38,6 +38,8 @@ const Register = () => {
 
     return (
         <div className={styles.container}>
+            <h1 className={styles.title}>Create an Account</h1>
+            <h2 className={styles.subtitle}>Please sign up to see the dashboard.</h2>
             <form className={styles.form} onSubmit={handleSubmit}>
                 <input type="text" placeholder='username' className={styles.input} required />
                 <input type="email" placeholder='email' className={styles.input} required />
