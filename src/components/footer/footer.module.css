@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0;
 }
 
 .social {
@@ -14,4 +15,12 @@
 .icon {
     opacity: 0.6;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 40px 0;
+        flex-direction: column;
+    }
+
 }

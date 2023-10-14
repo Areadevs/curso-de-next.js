@@ -4,6 +4,7 @@ import React from 'react'
 import styles from './navbar.module.css'
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle'
 import { signOut, useSession } from "next-auth/react";
+import ToggleMenu from '../Toggle/menu'
 
 const links = [
     {
@@ -42,21 +43,27 @@ const Navbar = () => {
 
     const session = useSession()
 
+
+
     return (
         <div className={styles.container}>
             <Link href="/" className={styles.logo}>lamamia</Link>
             <div className={styles.links}>
                 <DarkModeToggle />
-                {
-                    links.map(link => (
-                        <Link key={link.id} href={link.url} styles={styles.link}>{link.title}</Link>
-                    ))
-                }
-                {
-                    session.status === "authenticated" && (
-                        <button onClick={signOut} className={styles.logout}>Logout</button>
-                    )
-                }
+                <ToggleMenu />
+
+                <div className={styles.nav}>
+                    {
+                        links.map(link => (
+                            <Link key={link.id} href={link.url} styles={styles.link}>{link.title}</Link>
+                        ))
+                    }
+                    {
+                        session.status === "authenticated" && (
+                            <button onClick={signOut} className={styles.logout}>Logout</button>
+                        )
+                    }
+                </div>
             </div>
         </div >
     )

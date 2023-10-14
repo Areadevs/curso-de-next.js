@@ -590,6 +590,9 @@ video {
     max-width: 1536px;
   }
 }
+.collapse {
+  visibility: collapse;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -648,6 +651,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0;
 }
 
 .footer_social__cTb3Q {
@@ -659,6 +663,14 @@ a {
 .footer_icon__zw1Tn {
     opacity: 0.6;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .footer_container__cL_uA {
+        margin: 40px 0;
+        flex-direction: column;
+    }
+
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/DarkModeToggle/DarkModeToggle.module.css ***!
@@ -674,6 +686,7 @@ a {
     padding: 2px;
     position: relative;
     cursor: pointer;
+    margin-left: 0;
 }
 
 .DarkModeToggle_icon__ZzAjt {
@@ -687,6 +700,60 @@ a {
     border-radius: 50%;
     position: absolute;
 
+}
+
+@media screen and (max-width: 768px) {
+
+    .DarkModeToggle_container__diVrZ {
+        margin-left: 30px;
+    }
+
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Toggle/menu.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.menu_toggle__zcv0i {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu_close__Ii5QE {
+        color: #53c853;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .menu_toggle__zcv0i {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .menu_menu__GQpDT {
+        background-color: #111;
+        width: 40%;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 0px;
+        z-index: 9;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu_link__G7E_E {
+        margin: 15px 0;
+        color: white;
+        font-size: 20px;
+    }
+
+    .menu_link__G7E_E:active {
+        color: #53c853;
+    }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/navbar/navbar.module.css ***!
@@ -703,7 +770,8 @@ a {
     font-size: 22px;
 }
 
-.navbar_links__zwFDW {
+.navbar_links__zwFDW,
+.navbar_nav__uDQKs {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -715,4 +783,20 @@ a {
     background-color: #53c28b;
     color: white;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar_container__CZncu {
+        justify-content: center;
+    }
+
+    .navbar_logo__uZP7g {
+        font-size: 30px;
+    }
+
+    .navbar_nav__uDQKs {
+        display: none;
+    }
+
 }
