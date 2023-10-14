@@ -3,9 +3,6 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/dashboard/page": "app/dashboard/page.js",
   "/blog/page": "app/blog/page.js",
-  "/blog/[id]/page": "app/blog/[id]/page.js",
-  "/api/posts/route": "app/api/posts/route.js",
-  "/dashboard/(auth)/login/page": "app/dashboard/(auth)/login/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/api/posts/[id]/route": "app/api/posts/[id]/route.js"
+  "/portfolio/page": "app/portfolio/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

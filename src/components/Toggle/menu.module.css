@@ -1,0 +1,43 @@
+.toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .close {
+        color: #53c853;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .menu {
+        background-color: #111;
+        width: 40%;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 0px;
+        z-index: 9;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .link {
+        margin: 15px 0;
+        color: white;
+        font-size: 20px;
+    }
+
+    .link:active {
+        color: #53c853;
+    }
+}

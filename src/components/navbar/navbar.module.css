@@ -10,7 +10,8 @@
     font-size: 22px;
 }
 
-.links {
+.links,
+.nav {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -22,4 +23,20 @@
     background-color: #53c28b;
     color: white;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .nav {
+        display: none;
+    }
+
 }
