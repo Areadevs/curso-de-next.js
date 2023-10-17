@@ -53,3 +53,20 @@
     font-weight: 300;
     text-align: justify;
 }
+
+
+@media screen and (max-width: 768px) {
+    .imgText {
+        padding: 15px;
+    }
+
+    .textContainer {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .item {
+        margin-top: 0;
+    }
+
+}
