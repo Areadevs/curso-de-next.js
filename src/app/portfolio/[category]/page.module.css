@@ -40,3 +40,30 @@
 .desc {
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .catTitle {
+        text-align: center;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item:nth-child(2n+1) {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .img {
+
+        position: relative !important;
+    }
+
+}

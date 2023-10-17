@@ -23,3 +23,10 @@
     font-size: 18px;
     color: #999;
 }
+
+@media screen and (max-width: 768px) {
+    .page_container__sdT1e {
+        flex-direction: column;
+        padding: 15px;
+    }
+}
